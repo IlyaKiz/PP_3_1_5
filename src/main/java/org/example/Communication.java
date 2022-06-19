@@ -36,8 +36,6 @@ public class Communication {
     }
 
     @Autowired
-
-
     public List<User> getAllUsers() {
         ResponseEntity<List<User>> responseEntity =
                 restTemplate.exchange(URL, HttpMethod.GET, null
